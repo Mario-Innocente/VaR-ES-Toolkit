@@ -1,4 +1,4 @@
-# var_es_toolkit_cli.py
+# var_es_toolkit.py
 # VaR / Expected Shortfall (CVaR) Toolkit with interactive data intake.
 # Features:
 # - Accepts external data: paste tabular text, CSV, or clipboard (if pandas available).
@@ -359,3 +359,4 @@ if __name__ == "__main__":
         cov_mat = np.cov(R_assets.T, ddof=1)
         mc_var1, mc_es1 = mc_portfolio_var_es_from_cov(mu_vec, cov_mat, w, horizon_days=1, alpha=alpha, n_sims=300_000, seed=99)
         mc_var2, mc_es2 = mc_portfolio_var_es_from_cov(mu_vec, cov_mat, w, horizon_days=1, alpha=alpha2, n_sims=300_000)
+
